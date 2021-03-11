@@ -24,10 +24,19 @@ footer{
     padding: 0 200px;
 }
 
+#nameBurger{
+    border: none;
+    padding: 10px 15px;
+}
+
 ul{
     list-style: none;
 }
 
 img{
     width: 30px;
+}
+
+ul li{
+    margin: 20px 0;
 }
