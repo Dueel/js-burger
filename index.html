@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <h1>Create your burger</h1>
+
+    </header>
+
+    <main>
+        
+        <input type="text" name="" id="" placeholder="Name your burger">
+    
+        <h2>Ingredients</h2>
+    
+        <ul>
+            <li>
+                <img src="img/cheese.svg" alt="">
+                <span>Cheese</span>
+                <input type="checkbox" name="cheese" id="cheese" data-price="2">
+            </li>
+            <li>
+                <img src="img/fried-egg.svg" alt="">
+                <span>Egg</span>
+                <input type="checkbox" name="egg" id="egg" data-price="3">
+            </li>
+            <li>
+                <img src="img/mustard.svg" alt="">
+                <span>Mustard</span>
+                <input type="checkbox" name="mustard" id="mustard" data-price="4">
+            </li>
+            <li>
+                <img src="img/tomato.svg" alt="">
+                <span>Tomato</span>
+                <input type="checkbox" name="tomato" id="tomato" data-price="1">
+            </li>
+            <li>
+                <img src="img/lettuce.svg" alt="">
+                <span>Lettuce</span>
+                <input type="checkbox" name="lettuce" id="lettuce" data-price="6">
+            </li>
+            <li>
+                <img src="img/ketchup.svg" alt="">
+                <span>Ketchup</span>
+                <input type="checkbox" name="ketchup" id="ketchup" data-price="1">
+            </li>
+        </ul>
+    
+        <h3>Discount coupon</h3>
+        <input type="text" name="coupon" id="coupon">
+    
+        <input type="button" value="Calculate" id="calculate">   
+
+    </main>
+
+    <footer>
+        <h2>Your Price</h2>
+        <span>&euro;</span>
+        <span id="total"></span>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
