@@ -9,61 +9,70 @@
 </head>
 <body>
     <header>
-
-        <h1>Create your burger</h1>
-
+        <div class="container">
+            <h1>Create Your Burger</h1>
+        </div>
     </header>
 
     <main>
-        
-        <input type="text" name="" id="nameBurger" placeholder="Name your burger">
-    
-        <h2>Ingredients</h2>
-    
-        <ul>
-            <li>
-                <img src="img/cheese.svg" alt="">
-                <span>Cheese</span>
-                <input class="ingredients" type="checkbox" name="cheese" id="cheese" data-price="2">
-            </li>
-            <li>
-                <img src="img/fried-egg.svg" alt="">
-                <span>Egg</span>
-                <input class="ingredients" type="checkbox" name="egg" id="egg" data-price="3">
-            </li>
-            <li>
-                <img src="img/mustard.svg" alt="">
-                <span>Mustard</span>
-                <input class="ingredients" type="checkbox" name="mustard" id="mustard" data-price="4">
-            </li>
-            <li>
-                <img src="img/tomato.svg" alt="">
-                <span>Tomato</span>
-                <input class="ingredients" type="checkbox" name="tomato" id="tomato" data-price="1">
-            </li>
-            <li>
-                <img src="img/lettuce.svg" alt="">
-                <span>Lettuce</span>
-                <input class="ingredients" type="checkbox" name="lettuce" id="lettuce" data-price="6">
-            </li>
-            <li>
-                <img src="img/ketchup.svg" alt="">
-                <span>Ketchup</span>
-                <input class="ingredients" type="checkbox" name="ketchup" id="ketchup" data-price="1">
-            </li>
-        </ul>
-    
-        <h3>Discount coupon</h3>
-        <input type="text" name="coupon" id="coupon">
-    
-        <input type="button" value="Calculate" id="calculate">   
+        <div class="container">
 
+            <input type="text" name="" id="nameBurger" placeholder="Name your burger">
+        
+            <h2>Ingredients</h2>
+
+            <div class="divList">
+                <ul>
+                    <li>
+                        <img src="img/cheese.svg" alt="">
+                        <span>Cheese</span>
+                        <input class="ingredients" type="checkbox" name="cheese" id="cheese" data-price="2">
+                    </li>
+                    <li>
+                        <img src="img/fried-egg.svg" alt="">
+                        <span>Egg</span>
+                        <input class="ingredients" type="checkbox" name="egg" id="egg" data-price="3">
+                    </li>
+                    <li>
+                        <img src="img/mustard.svg" alt="">
+                        <span>Mustard</span>
+                        <input class="ingredients" type="checkbox" name="mustard" id="mustard" data-price="4">
+                    </li>
+                    <li>
+                        <img src="img/tomato.svg" alt="">
+                        <span>Tomato</span>
+                        <input class="ingredients" type="checkbox" name="tomato" id="tomato" data-price="1">
+                    </li>
+                    <li>
+                        <img src="img/lettuce.svg" alt="">
+                        <span>Lettuce</span>
+                        <input class="ingredients" type="checkbox" name="lettuce" id="lettuce" data-price="6">
+                    </li>
+                    <li>
+                        <img src="img/ketchup.svg" alt="">
+                        <span>Ketchup</span>
+                        <input class="ingredients" type="checkbox" name="ketchup" id="ketchup" data-price="1">
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="divCoupon">
+                <p>Discount coupon</p>
+                <input type="text" name="coupon" id="coupon">
+            </div>
+        
+        
+            <input type="button" value="Calculate" id="calculate">   
+
+        </div>
     </main>
 
     <footer>
-        <h2>Your Price</h2>
-        <span>&euro;</span>
-        <span id="total"></span>
+        <div class="container">  
+            <h2>Your Price</h2>
+            <span>&euro;</span>
+            <span id="total"></span>
+        </div>
     </footer>
 
 

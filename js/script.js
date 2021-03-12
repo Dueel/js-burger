@@ -1,6 +1,5 @@
 
 var ingredients = document.getElementsByClassName('ingredients');
-var totalPrice = 10;
 
 var lis = document.getElementsByTagName('li');
 
@@ -23,6 +22,8 @@ var btnCalculate = document.getElementById('calculate');
 btnCalculate.addEventListener('click', function(){
     
     var nameBurger = document.getElementById('nameBurger').value;
+    var totalPrice = 10;
+
     
     if(nameBurger.length > 1){
         
