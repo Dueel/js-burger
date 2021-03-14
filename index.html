@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/master.css">
     <title>Document</title>
 </head>
@@ -11,50 +12,73 @@
     <header>
         <div class="container">
             <h1>Create Your Burger</h1>
+            <img src="img/burger-top.png" alt="">
         </div>
     </header>
 
     <main>
         <div class="container">
 
-            <input type="text" name="" id="nameBurger" placeholder="Name your burger">
+            <input type="text" name="" id="nameBurger" placeholder="Name your burger...">
         
             <h2>Ingredients</h2>
 
-            <div class="divList">
                 <ul>
                     <li>
                         <img src="img/cheese.svg" alt="">
                         <span>Cheese</span>
                         <input class="ingredients" type="checkbox" name="cheese" id="cheese" data-price="2">
+                        <div class="toggle">
+                           <i class="fas fa-check"></i>
+                        </div>
+                        <span>Add</span>
                     </li>
                     <li>
                         <img src="img/fried-egg.svg" alt="">
                         <span>Egg</span>
                         <input class="ingredients" type="checkbox" name="egg" id="egg" data-price="3">
+                        <div class="toggle">
+                            <i class="fas fa-check"></i>
+                         </div>
+                        <span>Add</span>
                     </li>
                     <li>
                         <img src="img/mustard.svg" alt="">
                         <span>Mustard</span>
                         <input class="ingredients" type="checkbox" name="mustard" id="mustard" data-price="4">
+                        <div class="toggle">
+                            <i class="fas fa-check"></i>
+                         </div>
+                        <span>Add</span>
                     </li>
                     <li>
                         <img src="img/tomato.svg" alt="">
                         <span>Tomato</span>
                         <input class="ingredients" type="checkbox" name="tomato" id="tomato" data-price="1">
+                        <div class="toggle">
+                            <i class="fas fa-check"></i>
+                         </div>
+                        <span>Add</span>
                     </li>
                     <li>
                         <img src="img/lettuce.svg" alt="">
                         <span>Lettuce</span>
                         <input class="ingredients" type="checkbox" name="lettuce" id="lettuce" data-price="6">
+                        <div class="toggle">
+                            <i class="fas fa-check"></i>
+                         </div>
+                        <span>Add</span>
                     </li>
                     <li>
                         <img src="img/ketchup.svg" alt="">
                         <span>Ketchup</span>
                         <input class="ingredients" type="checkbox" name="ketchup" id="ketchup" data-price="1">
+                        <div class="toggle">
+                            <i class="fas fa-check"></i>
+                         </div>
+                        <span>Add</span>
                     </li>
                 </ul>
-            </div>
     
             <div class="divCoupon">
                 <p>Discount coupon</p>
@@ -70,8 +94,10 @@
     <footer>
         <div class="container">  
             <h2>Your Price</h2>
-            <span>&euro;</span>
-            <span id="total"></span>
+            <h2>
+                <span>&euro;</span>
+                <span id="total">10</span>
+            </h2>
         </div>
     </footer>
 

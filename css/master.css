@@ -31,23 +31,44 @@ footer{
 }
 
 .container{
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
+    position: relative;
 }
 
 footer .container{
+    display: flex;
     justify-content: space-between;
 }
 
+header h1{
+    display: inline-block;
+}
+
+header img{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    bottom: -100px;
+}
+
 #nameBurger{
+    margin-bottom: 20px;
+    padding:  15px 10px;
+    font-size: 20px;
+
+    background-color: #FDF5E4;
     border: none;
-    padding: 10px 0;
+    border-radius: 5px;
 }
 
 ul{
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     flex-wrap: wrap;
+
+    margin: 20px 0;
     height: 220px;
     list-style: none;
 }
@@ -69,10 +90,49 @@ li span{
     margin: 0 10px;
 }
 
+li span:last-child{
+    color: #BC3B59;
+}
+
+li input[type=checkbox]{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    background-color: white;
+
+    color: black;
+    text-align: center;
+}
+
+.toggle .fa-check{
+    display: none;
+    margin: auto;
+    line-height: 20px;
+}
+
+.ingredients:checked ~ .toggle{
+    border: none;
+    background-color: #BC3B59;
+}
+
+.ingredients:checked ~ .toggle .fa-check{
+    display: block;
+}
+
 .divCoupon{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 #coupon{
@@ -88,7 +148,7 @@ li span{
 #calculate{
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 15px 20px;
 
     background-color: #EFBA54;
